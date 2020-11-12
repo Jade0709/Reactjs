@@ -1,0 +1,52 @@
+{
+    "products":[
+        {
+            "id":"shoe1",
+            "title":"Jordan1 Men's Air",
+            "images":"/Images/jordan_554724-174_01.jpg",
+            "description":"Here’s Where it All Began.1985 saw the debut of the Air Jordan 1 basketball shoe, and the birth of a sports and cultural phenomenon that has evolved and endured for decades.Today, the Jordan AJ 1 Mid draws inspiration from elements of the original, but offers modern materials and features.",
+            "price":150,
+            "availableSizes":["40","41","42"]
+        },
+        {
+            "id":"shoe2",
+            "title":"Men's Retro Air Jordan 1 High",
+            "images":"/Images/jordan_555088-061_01.jpg",
+            "description":"The Air Jordan 1 “Dark Mocha” progresses the timeless silhouette’s association with wearable earth tones.Inspiration for the “Dark Mocha,” a Fall 2020 release, is culled from one of the most popular sneaker collaborations of 2019Travis Scott’s Air Jordan 1 collection. Though unlike the rapper’s take on the Jordan 1, this “Dark Mocha” iteration features smooth black leather overlays on the forefoot",
+            "price":175,
+            "availableSizes":["41","42"]
+        },
+        {
+            "id":"shoe3",
+            "title":"Men's Retro Air Jordan 1 High(Purple)",
+            "images":"/Images/jordan_555088-500_02.jpg",
+            "description":"The Women’s Air Jordan 1 High “Tie-Dye” is the women’s sizing of the summer-ready design of Michael Jordan’s first signature shoe. Released in Summer 2020, this lively colorway displays a tropical aesthetic with blue and green tie-dye leather overlays on the forefoot, collar, and heel",
+            "price":200,
+            "availableSizes":["40","41"]
+        },
+        {
+            "id":"shoe4",
+            "title":"Jodarn 1 mid SE",
+            "images":"/Images/jordan_852542-146_02.jpg",
+            "description":"The Women’s Air Jordan 1 High “Tie-Dye” is the women’s sizing of the summer-ready design of Michael Jordan’s first signature shoe. Released in Summer 2020, this lively colorway displays a tropical aesthetic with blue and green tie-dye leather overlays on the forefoot, collar, and heel",
+            "price":235,
+            "availableSizes":["40","41","42"]
+        },
+        {
+            "id":"shoe5",
+            "title":"Grade Retro Air Jordan1",
+            "images":"/Images/jordan_575441-028_01.jpg",
+            "description":"about Shoe1",
+            "price":150,
+            "availableSizes":["41","42"]
+        },
+        {
+            "id":"shoe6",
+            "title":"Jordan1 Dior Air",
+            "images":"/Images/jordan_cd0461-601_03.jpg",
+            "description":"about Shoe1",
+            "price":150,
+            "availableSizes":["43"]
+        }
+    ]
+}
