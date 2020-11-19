@@ -1,14 +1,13 @@
 import React,{Component} from 'react'
 import './Navbar.css'
 import {MenuItems} from './MenuItem'
-import { Button } from './Button'
+
 
 class Navbar extends Component{
     state = {click: false}
     handleClick = ()=>{
         this.setState({click: !this.state.click})
     }
-
     render(){
         
         return (
@@ -21,6 +20,7 @@ class Navbar extends Component{
                         </div>
                         <ul className={this.state.click ? 'nav-memu active':
                             'nav-menu'}>
+                            
                             {MenuItems.map((item,index)=>{
                                     return (
                                         <li key={index}>
@@ -33,7 +33,7 @@ class Navbar extends Component{
                                     )
                             })}   
                         </ul>
-                        <Button>Sign up</Button>
+                        
                     </nav>
                     
                 </div>

@@ -6,7 +6,8 @@
             "images":"/Images/jordan_554724-174_01.jpg",
             "description":"Here’s Where it All Began.1985 saw the debut of the Air Jordan 1 basketball shoe, and the birth of a sports and cultural phenomenon that has evolved and endured for decades.Today, the Jordan AJ 1 Mid draws inspiration from elements of the original, but offers modern materials and features.",
             "price":150,
-            "availableSizes":["40","41","42"]
+            "availableSizes":["40","41","42"],
+            "brand": ["Nike"]
         },
         {
             "id":"shoe2",
@@ -14,7 +15,8 @@
             "images":"/Images/jordan_555088-061_01.jpg",
             "description":"The Air Jordan 1 “Dark Mocha” progresses the timeless silhouette’s association with wearable earth tones.Inspiration for the “Dark Mocha,” a Fall 2020 release, is culled from one of the most popular sneaker collaborations of 2019Travis Scott’s Air Jordan 1 collection. Though unlike the rapper’s take on the Jordan 1, this “Dark Mocha” iteration features smooth black leather overlays on the forefoot",
             "price":175,
-            "availableSizes":["41","42"]
+            "availableSizes":["41","42"],
+            "brand": ["Nike"]
         },
         {
             "id":"shoe3",
@@ -22,7 +24,8 @@
             "images":"/Images/jordan_555088-500_02.jpg",
             "description":"The Women’s Air Jordan 1 High “Tie-Dye” is the women’s sizing of the summer-ready design of Michael Jordan’s first signature shoe. Released in Summer 2020, this lively colorway displays a tropical aesthetic with blue and green tie-dye leather overlays on the forefoot, collar, and heel",
             "price":200,
-            "availableSizes":["40","41"]
+            "availableSizes":["40","41"],
+            "brand": ["Nike"]
         },
         {
             "id":"shoe4",
@@ -30,7 +33,8 @@
             "images":"/Images/jordan_852542-146_02.jpg",
             "description":"The Women’s Air Jordan 1 High “Tie-Dye” is the women’s sizing of the summer-ready design of Michael Jordan’s first signature shoe. Released in Summer 2020, this lively colorway displays a tropical aesthetic with blue and green tie-dye leather overlays on the forefoot, collar, and heel",
             "price":235,
-            "availableSizes":["40","41","42"]
+            "availableSizes":["40","41","42"],
+            "brand": ["Nike"]
         },
         {
             "id":"shoe5",
@@ -38,15 +42,127 @@
             "images":"/Images/jordan_575441-028_01.jpg",
             "description":"about Shoe1",
             "price":150,
-            "availableSizes":["41","42"]
+            "availableSizes":["41","42"],
+            "brand": ["Nike"]
         },
         {
             "id":"shoe6",
-            "title":"Jordan1 Dior Air",
+            "title":"Jordan1 Air Red",
             "images":"/Images/jordan_cd0461-601_03.jpg",
-            "description":"about Shoe1",
-            "price":150,
-            "availableSizes":["43"]
-        }
+            "description":"about Shoe7",
+            "price":550,
+            "availableSizes":["43"],
+            "brand": ["Nike"]
+        },
+
+        {
+            "id":"shoe7",
+            "title":"Yeezy Zebra V2",
+            "images":"/Images/zeebra.jpg",
+            "description":"about Shoe7",
+            "price":450,
+            "availableSizes":["40:","42","43"],
+            "brand": ["Adidas"]
+        },
+        {
+            "id":"shoe8",
+            "title":"Yeezy Beluga",
+            "images":"/Images/Beluga.jpg",
+            "description":"about Shoe8",
+            "price":350,
+            "availableSizes":["40","41","43"],
+            "brand": ["Adidas"]
+        },
+        {
+            "id":"shoe9",
+            "title":"Ultra boost Raw Indigo",
+            "images":"/Images/OIP.jpg",
+            "description":"about Shoe9",
+            "price":500,
+            "availableSizes":["40","41","42"],
+            "brand": ["Adidas"]
+        },
+        
+        {
+            "id":"shoe10",
+            "title":"Gucci Fake Logo",
+            "images":"/Images/552851_DRW00_1000_002_100_0000_Light-Mens-Rhyton-leather-sneaker-with-Gucci-logo.jpg",
+            "description":"about Shoe10",
+            "price":3500,
+            "availableSizes":["42"],
+            "brand": ["Gucci"]
+        },
+        {
+            "id":"shoe11",
+            "title":"Ultra Boost Solar Orange",
+            "images":"/Images/SolarOrange.jpg",
+            "description":"about Shoe10",
+            "price":400,
+            "availableSizes":["40","41","43"],
+            "brand": ["Adidas"]
+        },
+        {
+            "id":"shoe12",
+            "title":"Ultra Boost 20 Global",
+            "images":"/Images/20GlobalCurrency.jpg",
+            "description":"about Shoe10",
+            "price":450,
+            "availableSizes":["40","41","43"],
+            "brand": ["Adidas"]
+        },
+        {
+            "id":"shoe13",
+            "title":"Ultra Boost 20 Global",
+            "images":"/Images/adidas-Ultra-Boost-2020-Black-2.jpg",
+            "description":"about Shoe10",
+            "price":350,
+            "availableSizes":["40","41","43"],
+            "brand": ["Adidas"]
+        },
+        {
+            "id":"shoe14",
+            "title":"Gucci New White Loved",
+            "images":"/Images/gucci-white-new-ace-sneakers-loved-embroidered-38-sneakers-size-us-8-regular-m-b-1-0-960-960.jpg",
+            "description":"about Shoe10",
+            "price": 550,
+            "availableSizes":["41"],
+            "brand": ["Gucci"]
+        },
+        {
+            "id":"shoe15",
+            "title":"Gucci GG Velcro",
+            "images":"/Images/Velcro.jpg",
+            "description":"about Shoe10",
+            "price": 750,
+            "availableSizes":["40","41","43"],
+            "brand": ["Gucci"]
+        },
+        {
+            "id":"shoe16",
+            "title":"Sandals Gucci Tiger",
+            "images":"/Images/365.jpg",
+            "description":"about Shoe10",
+            "price": 750,
+            "availableSizes":["40","43"],
+            "brand": ["Gucci"]
+        },
+        {
+            "id":"shoe17",
+            "title":"Gucci Sandals Rose",
+            "images":"/Images/sandals.jpg",
+            "description":"about Shoe10",
+            "price": 650,
+            "availableSizes":["41","43"],
+            "brand": ["Gucci"]
+        },
+        {
+            "id":"shoe18",
+            "title":"Gucci Beige Sneaker",
+            "images":"/Images/Beige.jpg",
+            "description":"about Shoe10",
+            "price": 550,
+            "availableSizes":["40","41"],
+            "brand": ["Gucci"]
+        }     
     ]
 }

@@ -13,6 +13,7 @@ body,
   display: grid;
   grid-template-areas: "header"
   "main"
+  "carousel"
   "footer";
   grid-template-rows: 5rem 1fr 5rem;
   grid-template-columns: 1fr;
@@ -36,9 +37,6 @@ main{
   grid-area: main;
   margin-top: 50px;
 }
-
-
-
 .content{
   display: flex;
   flex-wrap: wrap;
@@ -127,6 +125,12 @@ main{
 }
 .cart-header{
   border-bottom: 0.1rem #c0c0c0 solid;
+}
+.title_sanpham p{
+    font-family: 'OpenSansSemibold';
+    font-size: 33px;
+    color: #000000;
+    text-align: center;
 }
 
 .cart-items{
@@ -219,8 +223,8 @@ input{
   z-index: 1;
 }
 .scroll-to-top .icon{
-  margin-top: 12px;
-  margin-left: 13px;
+  margin-top: 10px;
+  margin-left: 1px;
   margin-bottom: 10px;
   justify-content: center;
   animation: scrollTop 0.5s alternate ease infinite;

@@ -9,12 +9,11 @@ class Filter extends Component {
                         {this.props.count} Products
                     </div>
                     <div className="filter-sort">
-                        Order
+                        Order {" "}
                         <select value={this.props.sort} 
                                 onChange={this.props.sortProducts}>
-                            <option>Latest</option>
-                            <option value="lowest">Lowest</option>
-                            <option value="highest">Highest</option>
+                            <option value="lowest">Lowest to Highest</option>
+                            <option value="highest">Highest to Lowest</option>
                         </select>
                     </div>
 
@@ -26,9 +25,17 @@ class Filter extends Component {
                             <option value="40">40</option>
                             <option value="41">41</option>
                             <option value="42">42</option>
-                            <option value="43">43</option>
-                            
-                            
+                            <option value="43">43</option>  
+                        </select>
+                    </div>
+                    <div className="filter-brand">
+                        Brand {" "}    
+                        <select value={this.props.brand} 
+                            onChange={this.props.brandProducts}>
+                            <option value="">All</option>
+                            <option value="Nike">Nike</option>
+                            <option value="Adidas">Adidas</option>
+                            <option value="Gucci">Gucci</option>
                         </select>
                     </div>
                 </div>

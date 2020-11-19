@@ -4,7 +4,7 @@ export class Nike extends Component {
     render() {
         return (
             <div>
-                Trang nike
+                Uptempo
             </div>
         )
     }

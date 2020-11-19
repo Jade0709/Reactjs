@@ -1,20 +1,20 @@
 const express = require ("express");
-const bodyParser = require ("bodyParser");
+const bodyParser = require ("body-parser");
 const mongoose = require ("mongoose");
 const shortid = require ("shortid");
 
 const app = express();
-app.use(bodyParser);;
+app.use(bodyParser.json());;
 
-mongoose.connect("mongodb://localost/sneaker-app-db",{
+
+mongoose.connect("mongodb://localhost/react-shopping-cart-db",{
     useNewUrlParser: true,
-    useCreateIndex:true,
+    useCreateIndex: true,
     useUnifiedTopology:true,
-
 });
 
 const Product = mongoose.model("products",new mongoose.Schema({
-    id:{type:String,default :shortid.generate},
+    _id:{type:String,default :shortid.generate},
     title: String,
     description: String,
     images: String,
@@ -38,6 +38,41 @@ app.delete("/api/products/:id",async(req,res)=>{
     const deleteProduct = await Product.findByIdAndDelete(req.params.id);
     res.send(deleteProduct);
 })
+
+const Order = mongoose.model("order",new mongoose.Schema(
+    {
+    _id:{
+        type:String,
+        default: shortid.generate
+    },
+    email:String,
+    name:String,
+    address:String,
+    total:Number,
+        cartItems:[
+            {
+            _id:String,
+            title:String,
+            price:Number,
+            count:Number
+            },
+        ],
+    },
+    {
+       timestamps:true,
+
+    }
+));
+
+app.post("/api/orders",async(req,res)=>{
+    if(!req.body.name || !req.body.email || !req.body.address || !req.body.total 
+        || !req.body.cartItems)
+        {
+            return res.send({message:"Data is always required."});
+        }
+    const order = await Order(req.body).save();
+    res.send(order);
+});
 
 const port = process.env.PORT || 5000;
 app.listen(port,() =>console.log("serve at http://localhost:5000"));

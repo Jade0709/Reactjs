@@ -1,5 +1,4 @@
 import React from 'react';
- 
 import Cart from './components/Cart';
 import Filter from './components/Filter';
 import Navbar from './components/Navbar';
@@ -8,6 +7,7 @@ import data from "./data.json";
 import {BrowserRouter ,Route} from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Scroll from './components/ScrollToTop/Scroll';
+
 
 class App extends React.Component {
   constructor(){
@@ -18,6 +18,7 @@ class App extends React.Component {
         :[],
         size: "",
         sort: "",
+        brand:""
     };
   }
   createOrder = (order)=>{
@@ -66,9 +67,7 @@ class App extends React.Component {
         ),
     }));
   };
-  
   filterProducts=(event)=>{
-    console.log(event.target.value);
     if(event.target.value ===""){
       this.setState({size:event.target.value,products:data.products});
     }else{
@@ -78,19 +77,29 @@ class App extends React.Component {
           (product)=>product.availableSizes.indexOf(event.target.value)>=0
           ),
       });
-    }
-    
-  };
-      
-  render(){
+    } 
+  }; 
+  brandProducts=(event)=>{
+    if(event.target.value ===""){
+      this.setState({brand:event.target.value,products:data.products});
+    }else{
+      this.setState({
+        brand: event.target.value,
+        products: data.products.filter(
+          (product)=>product.brand.indexOf(event.target.value)>=0
+          ),
+      });
+    } 
+  }; 
 
+  render(){
     return (
       <div className="grid-container">
           <BrowserRouter>
             <Route exact path ="/">
                 <header className="App-header">
-                        <Navbar>
-                        </Navbar>
+                        <Navbar/>
+                        
                 </header>
             </Route>        
           </BrowserRouter>
@@ -100,25 +109,25 @@ class App extends React.Component {
                 <Filter count = {this.state.products.length}
                         size = {this.state.size}
                         sort = {this.state.sort}
+                        brand = {this.state.brand}
                         filterProducs = {this.filterProducts}
                         sortProducts = {this.sortProducts}
+                        brandProducts = {this.brandProducts}
                 ></Filter>
                 <Products products={this.state.products} 
-                addToCart={this.addToCart}> </Products>
+                          addToCart={this.addToCart}> 
+                </Products>
             </div>
             <div className="sidebar">
                 <Cart cartItems={this.state.cartItems} 
-                removeFromCart={this.removeFromCart}
-                  createOrder = {this.createOrder}
+                      removeFromCart={this.removeFromCart}
+                     createOrder = {this.createOrder}
                 />
             </div>
           </div>
         </main>
-        
         <footer><Footer></Footer></footer>
         <Scroll/>
-            
-        
       </div>
     );
   }

@@ -2,9 +2,19 @@ import React from 'react'
 import { Link, Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history';
 import './Footer.css'
+import {MdLocationOn} from 'react-icons/md'
+import {FaPhoneSquare} from 'react-icons/fa';
+import {SiGmail} from 'react-icons/si';
+import {CgWebsite} from  'react-icons/cg';
+import {IconContext} from 'react-icons'
+
+import { Button } from '../Button'
+
 function Footer() {
+    
     const history = createBrowserHistory();
     return (
+        
         <div className="footer-container">
                 <section className="footer-subscription">
                     <p className="footer-subscription-heading">
@@ -16,33 +26,31 @@ function Footer() {
                     <div className="input-areas">
                         <form>
                             <input type="email" name="email" placeholder="Your email" className="footer-input"/>
-                                 <button className = 'btn--outliune'>Subscribe</button>
+                            <Button>Subscribe</Button>
                             
-                        </form>
+                    </form>
                     </div>
                 </section>
+                
                 <div className="footer-links">
-                    <div className="footer-link-wrapper">
-                        <div className="footer-link-items">
-                            <h2>About us</h2>
-                            <Router path="/" history={history}>
-                                <Link to='/sign-up'>How it works</Link>
-                                <Link to='/'>Testimonials</Link>
-                                <Link to='/'>Carrers</Link>
-                                <Link to='/'>Investors</Link>
-                                <Link to='/'>Terms of Service</Link>
-                            </Router>
-                        </div>
-                        <div className="footer-link-items">
-                            <h2>Contact us</h2>
-                            <Router path="/" history={history}>
-                                <Link to='/'>Contact</Link>
-                                <Link to='/'>Support</Link>
-                                <Link to='/'>Destination</Link>
-                                <Link to='/'>Sponsorships</Link>
-                            </Router>
+                    <IconContext.Provider value = {{color:"cornflowerblue",size:"2rem"}}>
+                        <div className="footer-link-wrapper">
+                            <div className="footer-link-items">
+                                <h2 className="contact">Contact us at</h2>
+                                <ul>
+                                    <li><MdLocationOn/>{" "}Nguyen Huu Tho, Tan Phong Ward, District 7, Ho Chi Minh City</li> <br/>
+                                    <li><FaPhoneSquare/>{" "}0837 755 035</li> <br/>
+                                    <li><SiGmail/>{" "}tonducthang@tdtu.edu.vn</li> 
+                                    <a href="https://www.tdtu.edu.vn/"><CgWebsite/>{" "} https://www.tdtu.edu.vn/</a>
+
+                                </ul>
+                            </div>
+                            <div className="footer-link-items">
+                                <h2>Timework</h2>
+                                <p>6:00Am - 5:30Pm</p>
                         </div>
                     </div>
+                    </IconContext.Provider>
                    <div className="footer-link-wrapper">
                     <div className="footer-link-items">
                             <h2>Social media</h2>
@@ -94,10 +102,7 @@ function Footer() {
                                     <i className="fab fa-twitter"></i>
                                 </Link>
                             </Router>
-                        </div>
-                        
-                            
-                        
+                        </div>     
                     </div>
                 </section>
         </div>
